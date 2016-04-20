@@ -1,0 +1,57 @@
+.icn{
+background-image:url(../images/sprite_x2.png);
+background-repeat: no-repeat;
+display: inline-block;
+background-color: transparent;
+-webkit-background-size: 41px 378px;
+background-size: 41px 378px;
+position: relative;
+}
+
+.link_go:after,
+.link_complex:before
+{position: absolute;content: '';}
+
+
+
+.icn_category_home  { background-position: -1px -131px; width: 28px; height: 21px; top: 2px;}
+.icn_category_places  { background-position: -24px -294px; width: 15px; height: 22px; top: 2px;}
+.icn_category_karaoke  { background-position: -1px -175px; width: 27px; height: 8px; top: -2px;left: -6px;}
+.icn_category_mic  { background-position: -1px -294px; width: 22px; height: 21px; top: 3px;}
+.icn_category_complects  { background-position: -1px -0px; width: 39px; height: 18px; top: 3px;}
+a:hover .icn_category_home{ background-position: -1px -153px; width: 28px; height: 21px; }
+a:hover .icn_category_places{ background-position: -24px -317px; width: 15px; height: 22px; }
+a:hover .icn_category_karaoke{ background-position: -1px -184px; width: 27px; height: 8px; }
+a:hover .icn_category_mic{ background-position: -1px -316px; width: 22px; height: 21px; }
+a:hover .icn_category_complects{ background-position: -1px -19px; width: 39px; height: 18px; }
+
+.icn_feature_w { background-position: -1px -100px; width: 30px; height: 30px; }
+.icn_feature_h { background-position: -1px -69px; width: 30px; height: 30px; }
+.icn_feature_c { background-position: -1px -38px; width: 30px; height: 30px; }
+
+.icn_arr_fwd_small { background-position: -1px -338px; width: 20px; height: 19px; }
+a:hover .icn_arr_fwd_small { background-position: -1px -358px; width: 20px; height: 19px; }
+
+
+.icn_ask { background-position: -1px -193px; width: 27px; height: 27px; }
+a:hover .icn_ask { background-position: -1px -221px; width: 27px; height: 27px; }
+.icn_reup { background-position: -1px -248px; width: 23px; height: 22px; }
+a:hover .icn_reup { background-position: -1px -271px; width: 23px; height: 22px; }
+
+
+
+
+.icn_cart,
+.link_go:after,
+.link_complex:before,
+.icn_arr_wt
+{-webkit-background-size: auto;background-size: auto;background-image: url(../images/sprite.png);}
+
+.icn_cart { background-position: -2px -0px; width: 26px; height: 22px; }
+a:hover .icn_cart { background-position: -2px -24px; width: 26px; height: 22px; }
+.link_go:after { background-position: -2px -126px; width: 16px; height: 17px; right: 0;margin-top: 2px;}
+.link_go:hover:after { background-position: -2px -145px; width: 16px; height: 17px; }
+
+.link_complex:before { background-position: -2px -48px; width: 24px; height: 24px; left: 0;top: 4px;}
+.link_complex:hover:before { background-position: -2px -74px; width: 24px; height: 24px; }
+.icn_arr_wt { background-position: -2px -100px; width: 24px; height: 24px; }
