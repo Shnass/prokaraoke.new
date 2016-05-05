@@ -3,8 +3,8 @@ background-image:url(../images/sprite_x2.png);
 background-repeat: no-repeat;
 display: inline-block;
 background-color: transparent;
--webkit-background-size: 41px 378px;
-background-size: 41px 378px;
+-webkit-background-size: 41px 421px;
+background-size: 41px 421px;
 position: relative;
 }
 
@@ -38,14 +38,20 @@ a:hover .icn_ask { background-position: -1px -221px; width: 27px; height: 27px; 
 .icn_reup { background-position: -1px -248px; width: 23px; height: 22px; }
 a:hover .icn_reup { background-position: -1px -271px; width: 23px; height: 22px; }
 
+.icn_mute{background-position: -1px -379px;width: 39px;
+height: 40px;}
 
 
 
 .icn_cart,
 .link_go:after,
 .link_complex:before,
-.icn_arr_wt
+.icn_arr_wt,
+.c_boxes_box>span:after
 {-webkit-background-size: auto;background-size: auto;background-image: url(../images/sprite.png);}
+
+.c_boxes_box>span:after
+{content: '';position: relative;display: inline-block;}
 
 .icn_cart { background-position: -2px -0px; width: 26px; height: 22px; }
 a:hover .icn_cart { background-position: -2px -24px; width: 26px; height: 22px; }
@@ -55,3 +61,6 @@ a:hover .icn_cart { background-position: -2px -24px; width: 26px; height: 22px; 
 .link_complex:before { background-position: -2px -48px; width: 24px; height: 24px; left: 0;top: 4px;}
 .link_complex:hover:before { background-position: -2px -74px; width: 24px; height: 24px; }
 .icn_arr_wt { background-position: -2px -100px; width: 24px; height: 24px; }
+
+
+.c_boxes_box>span:after{width: 14px;height: 14px;background-position: -2px -165px;}

@@ -1,5 +1,13 @@
 "use strict";
 $(function(){
+
+	function if_mobile(){
+		if($(window).width()<760) return true;
+	}
+	function if_tab(){
+		if($(window).width()<1001) return true;
+	}
+
 	/*** BANNER SLIDESHOW ***/
     $('.bx_slider').each(function(){
         var $this = $(this);
@@ -15,13 +23,17 @@ $(function(){
     })
 
 	/*** BANNER CARUSEL ***/
-	$('.bx_carusel').each(function(){
+	$('.items_carusel>ul').each(function(){
+		var x=4;
+		if(if_mobile()){
+			x=1;
+		}
 		var $this = $(this);
         $this.data('linkedEl', $this.bxSlider({
-		   	minSlides: 6,
-  			maxSlides: 6,
-  			slideWidth: 164,
-  			slideMargin: 30,
+		   	minSlides: x,
+  			maxSlides: x,
+  			slideWidth: 500,
+  			slideMargin: 0,
   			pager:false,
   			controls:true,
   			autoHover: true,
@@ -108,6 +120,13 @@ $(function(){
       	$('.header_nav_main').slideToggle();
       })
 
+
+      $('.call_search').click(function(){
+      	$(this).parents('form').toggleClass('vsb');
+      	if($('.vsb').length){
+      		$('.search_itself input').focus()
+      	}
+      })
 
 
 jpg_compare();
